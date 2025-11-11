@@ -1,0 +1,40 @@
+body {
+  background-color: #1C1C1E;
+  color: #FFFAFA;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  color: #8B0000;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #A0A0A0;
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #8B0000;
+  color: #FFFAFA;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 15px;
+  color: #00BFFF;
+}
