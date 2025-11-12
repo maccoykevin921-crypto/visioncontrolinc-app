@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("initBtn");
-  const status = document.getElementById("status");
+const button = document.getElementById('initBtn');
+const status = document.getElementById('status');
 
-  button.addEventListener("click", () => {
-    status.textContent = "AI System Online";
-    status.style.color = "#00FF7F";
-    button.disabled = true;
-    button.style.backgroundColor = "#5C0000";
-    button.style.boxShadow = "0 0 20px #8B0000";
-  });
+button.addEventListener('click', () => {
+  status.textContent = 'Initializing System...';
+  status.style.color = '#8B0000';
+  button.disabled = true;
+
+  setTimeout(() => {
+    status.textContent = 'System Online';
+    status.style.color = '#228B22';
+    button.disabled = false;
+  }, 3000);
 });
