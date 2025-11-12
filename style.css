@@ -1,40 +1,99 @@
 body {
+  margin: 0;
   background-color: #1C1C1E;
   color: #FFFAFA;
-  font-family: 'Helvetica Neue', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
   height: 100vh;
-  margin: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, #8B0000 0%, #000 90%);
+  animation: breathe 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes breathe {
+  0%,100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
 }
 
 .container {
+  position: relative;
+  z-index: 1;
   text-align: center;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
-  color: #8B0000;
-  font-size: 2em;
-  margin-bottom: 10px;
+  height: 60px;
+  opacity: 0.9;
+}
+
+.plus {
+  color: #FFFAFA;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 26px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #FFFAFA;
+}
+
+.divider {
+  width: 80px;
+  height: 2px;
+  background: #8B0000;
+  margin: 12px auto;
 }
 
 .tagline {
-  color: #A0A0A0;
-  font-size: 1em;
+  font-size: 14px;
+  color: #cccccc;
   margin-bottom: 25px;
 }
 
-.btn {
-  background-color: #8B0000;
+.init-btn {
+  background: #8B0000;
   color: #FFFAFA;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 12px 25px;
+  font-size: 15px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px #8B0000;
+}
+
+.init-btn:hover {
+  background: #a00000;
+  box-shadow: 0 0 20px #8B0000;
 }
 
 .status {
-  margin-top: 15px;
-  color: #00BFFF;
+  margin-top: 18px;
+  color: #999;
+  font-size: 14px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  color: #999;
 }
