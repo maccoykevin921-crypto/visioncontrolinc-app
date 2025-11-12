@@ -1,32 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Control.inc® | OEMlink Interface</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OEMlink Interface — Control.INC® Vision®</title>
+
+  <style>
+    :root {
+      --charcoal: #1C1C1E;
+      --snow: #FFFAFA;
+      --dark-red: #8B0000;
+      --muted: #6b6b6b;
+      --card-width: 700px;
+      --card-radius: 18px;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--charcoal);
+      color: var(--charcoal);
+    }
+
+    .page {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--snow) 0%, #FFF9F8 100%);
+      width: min(92vw, var(--card-width));
+      border-radius: var(--card-radius);
+      padding: 40px 48px 48px 48px;
+      box-sizing: border-box;
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    /* Top red line */
+    .card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 4px;
+      background: var(--dark-red);
+      border-radius: 0 0 2px 2px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .logo .brand {
+      text-align: center;
+      line-height: 1;
+    }
+
+    .logo .brand h1 {
+      margin: 0;
+      font-size: 44px;
+      letter-spacing: -0.6px;
+      color: #2f2f2f;
+      font-weight: 700;
+    }
+
+    .logo .brand .vision {
+      display: block;
+      color: #3a3a3a;
+      font-size: 18px;
+      margin-top: 6px;
+      font-weight: 700;
+    }
+
+    .title {
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .title h2 {
+      margin: 0;
+      font-size: 36px;
+      color: var(--dark-red);
+      font-weight: 800;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .copy {
+      margin-top: 22px;
+      color: #444;
+      font-size: 14px;
+      line-height: 1.55;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .divider {
+      margin-top: 22px;
+      height: 6px;
+      width: 70%;
+      background: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 2px solid var(--dark-red);
+      opacity: 0.95;
+      border-radius: 2px;
+    }
+
+    .enter-btn {
+      display: block;
+      margin: 28px auto 0 auto;
+      padding: 12px 36px;
+      background: var(--dark-red);
+      color: var(--snow);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .enter-btn:hover {
+      background: #a30000;
+      transform: scale(1.04);
+      box-shadow: 0 4px 14px rgba(139, 0, 0, 0.3);
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #6d6d6d;
+      font-size: 13px;
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 20px;
+        border-radius: 14px;
+      }
+      .logo .brand h1 { font-size: 28px; }
+      .title h2 { font-size: 26px; }
+      .copy { font-size: 13px; }
+      .enter-btn { padding: 10px 28px; font-size: 14px; }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://your-controlinc-logo-url.png" alt="Control.inc Logo" class="logo">
+  <div class="page">
+    <div class="card">
+      <div class="logo">
+        <div class="brand">
+          <h1>control.inc</h1>
+          <span class="vision">vision</span>
+        </div>
+      </div>
 
-    <h1 class="system-name">OEMlink Interface</h1>
-    <h2 class="subtitle">Unified Control Core System</h2>
+      <div class="title">
+        <h2>OEMlink Interface</h2>
+        <div class="subtitle">UNIFIED CONTROL CORE SYSTEM</div>
+      </div>
 
-    <p class="intro">
-      The OEMlink Interface represents the unified Control Core System — engineered by
-      <strong>control.inc® Germany</strong> and <strong>vision® Japan</strong> to synchronize automation,
-      diagnostics, and embedded control communication into a seamless operational environment.
-    </p>
+      <p class="copy">
+        Welcome to the OEMlink Interface — a unified engineering framework that integrates automation,
+        diagnostics, and synchronization across the control.inc® and vision® environments.
+      </p>
 
-    <button id="initBtn" class="init-btn">Initialize System</button>
-    <p id="status" class="status">System Offline</p>
+      <p class="copy">
+        Developed by control.inc® Germany and vision® Japan, the OEMlink framework delivers stable OEM-grade
+        performance and intelligent link communication between modules, sensors, and enterprise systems.
+      </p>
 
-    <footer>
-      © 2025 control.inc® | OEMlink Unified Core System
-    </footer>
+      <div class="divider"></div>
+
+      <button class="enter-btn">Enter System</button>
+
+      <footer>
+        © 2025 control.inc® | VisionControlInc Deep AI
+      </footer>
+    </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
