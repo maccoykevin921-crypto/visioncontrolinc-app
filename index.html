@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VisionControlInc | Deep AI Immersion Frontend</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control.INC® + Vision® | AI System</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background"></div>
+
   <div class="container">
-    <h1 class="logo">VisionControlInc</h1>
-    <p class="tagline">Deep AI Immersion Frontend</p>
-    <div class="system-panel">
-      <button id="initialize" class="btn">Initialize System</button>
-      <div id="status" class="status">System Idle</div>
+    <div class="logos">
+      <img src="https://your-controlinc-logo-url" class="logo control" alt="Control.INC Logo" />
+      <span class="plus">+</span>
+      <img src="https://your-vision-logo-url" class="logo vision" alt="Vision Logo" />
     </div>
+
+    <h1 class="title">0EMlink UNIT</h1>
+    <div class="divider"></div>
+    <p class="tagline">Unified Deep AI Immersion Interface</p>
+
+    <button id="initBtn" class="init-btn">Initialize System</button>
+    <p id="status" class="status">System Offline</p>
+
+    <footer>
+      Powered by VisionControlInc Deep AI | © 2025 Control.INC®
+    </footer>
   </div>
+
+  <audio id="bootSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0b7fa3e7f3.mp3?filename=startup-tone.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>
