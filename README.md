@@ -1,4 +1,4 @@
-# VisionControlInc Global Automotive intelligence Frontend
+# VisionControl Inc Global Automotive intelligence Frontend
 
 **VisionControlInc** — a precision-engineered interface for Control & Vision systems.  
 Combining **German engineering** and **Japanese intelligence**, this frontend powers the  
