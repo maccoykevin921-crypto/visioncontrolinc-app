@@ -45,7 +45,6 @@
       border: 1px solid rgba(0, 0, 0, 0.06);
     }
 
-    /* Top red line */
     .card::before {
       content: '';
       position: absolute;
@@ -54,35 +53,25 @@
       top: 0;
       height: 4px;
       background: var(--dark-red);
-      border-radius: 0 0 2px 2px;
     }
 
     .logo {
       display: flex;
-      align-items: center;
       justify-content: center;
       margin-top: 28px;
     }
 
-    .logo .brand {
-      text-align: center;
-      line-height: 1;
-    }
-
-    .logo .brand h1 {
+    .logo h1 {
       margin: 0;
       font-size: 44px;
-      letter-spacing: -0.6px;
       color: #2f2f2f;
-      font-weight: 700;
     }
 
-    .logo .brand .vision {
-      display: block;
-      color: #3a3a3a;
+    .vision {
+      text-align: center;
       font-size: 18px;
+      font-weight: bold;
       margin-top: 6px;
-      font-weight: 700;
     }
 
     .title {
@@ -94,7 +83,6 @@
       margin: 0;
       font-size: 36px;
       color: var(--dark-red);
-      font-weight: 800;
     }
 
     .subtitle {
@@ -102,105 +90,81 @@
       margin-top: 8px;
       color: var(--muted);
       font-size: 13px;
-      font-weight: 600;
     }
 
     .copy {
       margin-top: 22px;
       color: #444;
       font-size: 14px;
-      line-height: 1.55;
       max-width: 640px;
       margin-left: auto;
       margin-right: auto;
-      text-align: left;
     }
 
     .divider {
       margin-top: 22px;
-      height: 6px;
+      border-bottom: 2px solid var(--dark-red);
       width: 70%;
-      background: transparent;
       margin-left: auto;
       margin-right: auto;
-      border-bottom: 2px solid var(--dark-red);
-      opacity: 0.95;
-      border-radius: 2px;
     }
 
     .enter-btn {
       display: block;
-      margin: 28px auto 0 auto;
+      margin: 28px auto;
       padding: 12px 36px;
       background: var(--dark-red);
       color: var(--snow);
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.4px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      transition: all 0.25s ease;
-    }
-
-    .enter-btn:hover {
-      background: #a30000;
-      transform: scale(1.04);
-      box-shadow: 0 4px 14px rgba(139, 0, 0, 0.3);
     }
 
     footer {
-      margin-top: 20px;
       text-align: center;
-      color: #6d6d6d;
       font-size: 13px;
-    }
-
-    @media (max-width: 520px) {
-      .card {
-        padding: 20px;
-        border-radius: 14px;
-      }
-      .logo .brand h1 { font-size: 28px; }
-      .title h2 { font-size: 26px; }
-      .copy { font-size: 13px; }
-      .enter-btn { padding: 10px 28px; font-size: 14px; }
+      color: #6d6d6d;
     }
   </style>
 </head>
+
 <body>
-  <div class="page">
-    <div class="card">
-      <div class="logo">
-        <div class="brand">
-          <h1>control.inc</h1>
-          <span class="vision">vision</span>
-        </div>
+
+<div class="page">
+  <div class="card">
+
+    <div class="logo">
+      <div>
+        <h1>control.inc</h1>
+        <div class="vision">vision</div>
       </div>
-
-      <div class="title">
-        <h2>OEMlink Interface</h2>
-        <div class="subtitle">UNIFIED CONTROL CORE SYSTEM</div>
-      </div>
-
-      <p class="copy">
-        Welcome to the OEMlink Interface — a unified engineering framework that integrates automation,
-        diagnostics, and synchronization across the control.inc® and vision® environments.
-      </p>
-
-      <p class="copy">
-        Developed by control.inc® Germany and vision® Japan, the OEMlink framework delivers stable OEM-grade
-        performance and intelligent link communication between modules, sensors, and enterprise systems.
-      </p>
-
-      <div class="divider"></div>
-
-      <button class="enter-btn">Enter System</button>
-
-      <footer>
-        © 2025 control.inc® | VisionControlInk Global Automotive intelligence
-      </footer>
     </div>
+
+    <div class="title">
+      <h2>OEMlink Interface</h2>
+      <div class="subtitle">UNIFIED CONTROL CORE SYSTEM</div>
+    </div>
+
+    <p class="copy">
+      Unified engineering framework integrating diagnostics, automation and system intelligence.
+    </p>
+
+    <div class="divider"></div>
+
+    <button class="enter-btn">Enter System</button>
+
+    <footer>
+      © 2025 control.inc® | VisionControlInk
+    </footer>
+
   </div>
+</div>
+
+<!-- NEW SECTION -->
+<div style="max-width:700px;margin:60px auto;text-align:center;color:#FFFAFA;font-family:Arial;">
+  <h2>Control.INC® + Vision® Core</h2>
+  <p>Unified AI system for real-time diagnostics.</p>
+</div>
+
 </body>
 </html>
